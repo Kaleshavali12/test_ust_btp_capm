@@ -297,19 +297,3 @@ annotate service.POItems with {
          ValueList.entity: CatalogService.ProductSet
     )
 };
- 
-@cds.odata.valuelist
-annotate service.BusinessPartnerSet with @(
-    UI.Identification:[{
-        $Type : 'UI.DataField',
-        Value : COMPANY_NAME,
-    }]
-);
- 
-@cds.odata.valuelist
-annotate service.ProductSet with @(
-    UI.Identification:[{
-        $Type : 'UI.DataField',
-        Value : DESCRIPTION,
-    }]
-);
